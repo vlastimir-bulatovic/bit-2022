@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+</head>
+
+<body>
+
+    <h1>
+        Sign up form
+    </h1>
+    <!-- 
+        Form is a way for us to take some data from our user. 
+        Attribute action represent where we want to send data.
+        Attribute method represent how? 
+        
+        Via url (GET) should be used only when we request some data from someone (server).
+        Data is visible in url and not protected
+
+        Via request headers (POST) should be used when we want to save some data (user information).
+        Data is not visible in url and and is sent via header
+    -->
+    <form action="www.example.com/some-api/index.php" action="POST">
+
+        <!-- 
+            fieldset create border around elements that are inside.
+            Used for visual grouping of elements. Can be used outside form tag 
+        -->
+        <fieldset>
+            <!-- legend add title on our fieldset -->
+            <legend>Basic info</legend>
+
+            <!-- label is caption or description of  form element-->
+            <label>
+                <strong>Name: </strong>
+
+                <!-- 
+                    input is element that can have many different types(text, password, email, number, date, color .etc) 
+                    attribute name is the way how will our date look when sended. 
+                -->
+                <input type="text" name="firstName">
+            </label>
+
+            <label for="#someId">Surname: </label>
+            <input id="someId" type="text" name="lastName">
+            <br>
+            <br>
+            <!-- select is element that add list with set of option  to select.-->
+            <select name="gender">
+                <!-- 
+                    option tag is a selectable  from set predefined values. 
+                    attribute value represent value that will be sended on submit 
+                -->
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <!-- attribute selected set option value as a default -->
+                <option value="other" selected>Other</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <label >
+                Interests: 
+
+                <!-- 
+                    input type checkbox attribute name group all inputs with the same name
+                    input type checkbox is checkable box that alow us to select 
+                    multiple boxes and is sended as a array of values 
+                -->
+                <input type="checkbox" name="interests[]"  value="js" > Js 
+                <input type="checkbox" name="interests[]" value="css"> Css 
+                <input type="checkbox" name="interests[]" value="html" checked> HTML 
+            </label>
+            <br>
+            <br>
+            <label>
+                Currently learning:
+            
+                <!--
+                    input type radio attribute name group all inputs with the same name 
+                    input type radio is checkable box that only allow one answer 
+                -->
+                <input type="radio" name="currentInterest" value="js"> Js 
+                <input type="radio" name="currentInterest" value="css"> Css 
+                <input type="radio" name="currentInterest" value="html"> HTML 
+            </label>
+            <br>
+            <br>
+            <label>
+                Biography
+
+                <!-- 
+                    textarea is used when we have some large text that we want to get our user to write  
+                    attribute rows represent number of rows in textarea
+                    attribute cols represent number of characters in one row
+                -->
+                <textarea name="bio" cols="30" rows="10"></textarea>
+            </label>
+
+            <br><br>
+            <label>
+                Upload image:
+                <!-- allow us to upload file  -->
+                <input type="file" name="userImage">
+            </label>
+
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Account info</legend>
+
+            <label>
+                Email:
+
+                <!-- attribute required is added on fields that have to have some value(can't be empty on submit) -->
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Password:
+                <input type="password" name="userPassword" required>
+            </label>
+        </fieldset>
+        <br>
+        <br>
+
+        <!-- create a button that on click submits form -->
+        <input type="submit" value="Submit form">
+        <br>
+        <!--
+            button is a element that can be used outside of form and 
+            we can create some interactions on click with js.
+            in form button  behave as input type="submit".  
+        -->
+        <button>
+            Submit form button
+        </button>
+        <br>
+        <br>
+        <!-- create a button that empty all elements in form (select, input, textarea etc.) -->
+        <input type="reset" value="Reset form">
+        <br>
+        <!-- 
+            Button attribute type have four values (button, submit, reset and menu) 
+            default value in form is submit. 
+            If type="reset" button will on click empty all form elements (behave as a input type="reset") 
+        -->
+        <button type="reset">
+            Reset Form button
+        </button>
+        <br>
+        <br>
+
+        <!--  input type="button" set button behavior as a regular button(can't submit form, can't reset form) -->
+        <button type="button">
+            Do noting
+        </button>
+        <br>
+    </form>
+</body>
+
+</html>
