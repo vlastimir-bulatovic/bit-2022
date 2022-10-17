@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FBI - Create New Wanted Post</title>
+  </head>
+  <body>
+    <table width="90%" align="center">
+      <tr>
+        <td ></td>
+
+        <td width="80%">
+          <p>
+            <a href="./../index.html">Back to home</a>
+          </p>
+
+          <form action="" method="POST">
+            
+            <fieldset>
+              <legend>Top Headline</legend>
+
+              <label>
+                Headline text:
+                <input
+                  type="text"
+                  name="topHeadline"
+                  placeholder="text here ..."
+                />
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Images</legend>
+
+              <label>
+                Image 1:
+                <input type="file" name="imageOne" />
+              </label>
+
+              <br />
+
+              <label>
+                Image 2:
+                <input type="file" name="imageTwo" />
+              </label>
+
+              <br />
+
+              <label>
+                Image 3:
+                <input type="file" name="imageThree" />
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Reward</legend>
+
+              <label for="rewardMoney">Reward money:</label>
+              <input
+                type="text"
+                name="reward"
+                id="rewardMoney"
+                placeholder="text here ..."
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend>Reward</legend>
+
+              <label>
+                Aliases:
+                <br />
+                <input type="text" name="aliases" />
+              </label>
+              <br />
+              <br />
+
+              <label>
+                Birth:
+                <br />
+                <input type="text" name="dateOfBirth" />
+              </label>
+              <br />
+              <br />
+
+              <label>
+                Hair:
+                <br />
+                <input type="text" name="hair" />
+              </label>
+              <br />
+              <br />
+
+              <label>
+                Eyes:
+                <br />
+                <input type="text" name="eyes" />
+              </label>
+              <br />
+              <br />
+
+              <label>
+                Height:
+                <br />
+                <input type="text" name="height" />
+              </label>
+              <br />
+              <br />
+
+              <label>
+                Weight:
+                <br />
+                <input type="text" name="weight" />
+              </label>
+              <br />
+              <br />
+
+              <label>
+                Sex:
+                <br />
+                <input type="text" name="sex" />
+              </label>
+              <br />
+              <br />
+
+              <label>
+                ID number:
+                <br />
+                <input type="text" name="idNumber" />
+              </label>
+              <br />
+              <br />
+
+              <label>
+                Occupation:
+                <br />
+                <input type="text" name="occupation" />
+              </label>
+              <br />
+            </fieldset>
+
+            <fieldset>
+              <legend>Remarks</legend>
+
+              <textarea
+                name="remark"
+                rows="10"
+                cols="160"
+                placeholder="Remarks text"
+              ></textarea>
+            </fieldset>
+
+            <fieldset>
+              <legend>Caution</legend>
+
+              <textarea
+                name="caution"
+                rows="10"
+                cols="160"
+                placeholder="Caution text"
+              ></textarea>
+            </fieldset>
+
+            <br />
+            <br />
+
+            <div>
+              <button type="reset">
+                <img
+                  src="../images/icons/refresh.png"
+                  alt="Reset image"
+                  height="10"
+                  width="10"
+                />
+                Reset
+              </button>
+
+              <button type="submit">
+                <img
+                  src="../images/icons/plus.png"
+                  alt="Plus image"
+                  height="12"
+                  width="12"
+                />
+                Create Poster
+              </button>
+            </div>
+          </form>
+        </td>
+
+        <td ></td>
+      </tr>
+
+      <tr>
+        <td colspan="3">
+          <br />
+          <hr />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
