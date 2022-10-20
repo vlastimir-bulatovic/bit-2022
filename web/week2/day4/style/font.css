@@ -1,0 +1,30 @@
+/* All about fonts */
+
+/* import google font externally  */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+/* used as font-family: 'Nunito Sans', sans-serif; */
+
+
+/* Import local font and create custom name for font family */
+@font-face {
+  font-family: "Bitbit-regular";
+  src: url("./../font/Lato-Regular.ttf");
+}
+
+/* used as font-family: 'Bitbit-regular', sans-serif; */
+
+
+.someSelector {
+    /* list of fonts for our page as fallback from left to right */
+    font-family: 'Courier New', Courier, monospace;
+
+    /* size of our text. Recommended units px, em and rem */
+    font-size: 1em; 
+
+    /* Style of our font. Can be normal, italic and oblique */
+    font-style: italic;
+
+    /* Weight of our letters. Can be from 100 to 900 with 100 step  */
+    font-weight: 200;
+}

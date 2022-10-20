@@ -1,0 +1,22 @@
+p{
+    color: darkturquoise;
+    background-color: rgb(255, 227, 194);
+}
+
+div > p{
+    color: rgb(0, 206, 209);
+    background-color: #a52a2a;
+}
+
+article > p{
+    color: #00ced1;
+    background-color: coral;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.rgba {
+    background-color: rgba(0, 0, 0, 0.7);
+}
