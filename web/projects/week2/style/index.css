@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    font-family: 'Poppins', Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-green {
+    background-color: #C2EE90;
+}
+.bg-grey__dark {
+    background-color: #6F9741;
+}
+
+
+
+h1, h2 {
+    font-weight: 500;
+}
+
+header > div {
+    padding: 10px 20px;
+}
+header > div > span {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+header > nav {
+    padding: 5px 20px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+
+
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+main > section {
+    border-bottom: 2px solid #EDFCED;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+section#home > h1 {
+    border-left: 2px solid #338133;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+section#home > p > strong {
+    color: #8AB897;
+}
+
+section#home > p > span {
+    color: #CDA7A6;
+}
+
+
+
+section > h2 {
+    margin-bottom: 15px;
+}
+
+
+
+
+section#about > figure {
+    width: 24%;
+    height: 400px;
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+section#about > figure > img {
+    width: 100%;
+}
+
+
+
+
+
+form > input[type="email"], form > textarea {
+    width: 100%;
+    border: 1px solid #ECECEC;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    
+}
+
+form > input[type="button"] {
+    width: 120px;
+    padding: 8px 0;
+    border: none;
+    background-color: #006400;
+    color: #fff;
+}
+
+form > input, form > textarea {
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+
+footer {
+    padding: 20px 50px;
+}
+
+footer > a {
+    border: 2px solid #3C7821;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
