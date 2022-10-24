@@ -1,0 +1,86 @@
+body {
+    background-image: url("./../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+}
+
+
+
+.card {
+    margin: calc((100vh - 570px) / 2) auto;
+    height: 570px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card > div > img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.card-body {
+    padding:  0 50px 40px;
+}
+
+.card-body > .list {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    text-align: left;
+}
+
+.card-body > .list > div {
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
+}
+.card-body > .list > div > span {
+    width: 100%;
+    display: inline-block;
+}
+
+.card-body > .list > div > a {
+    width: 100%;
+    display: inline-block;
+}
+
+
+.card-body > .list > div:first-of-type {
+    margin:  10px;
+}
+
+
+.card-body > .list > div:last-of-type {
+    margin-left: auto;
+}
+
+.card-body > div.links > div > a {
+    text-decoration: none;
+}
+
+
+.card-body > div.links > div:first-of-type {
+    margin: 25px 0;
+}
+
+
+.card-body > div.links > div:first-of-type > a {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px 0;
+    color: #fff;
+    background-color: hsl(223, 47%, 23%);
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+
+
+.card-body > div.links > div:last-of-type > a {
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+}
