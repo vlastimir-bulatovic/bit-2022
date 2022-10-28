@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.status-active {
+  background-color: green;
+}
+
+.status-inactive {
+  background-color: red;
+}
+
+header {
+  background-color: black;
+  padding: 15px 0;
+}
+
+header ul {
+  text-align: center;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 70px;
+}
+
+header li:not(:last-of-type) {
+  border-right: 1px solid white;
+}
+
+header li a {
+  color: white;
+  text-decoration: none;
+}
+
+#home img {
+  width: 100%;
+  height: calc(100vh-50px);
+}
+
+#story {
+  width: 50%;
+  margin: 40px auto 70px;
+}
+
+#story h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#story p {
+  text-align: justify;
+}
+
+#users {
+  padding: 50px 0 70px;
+  background-color: rgb(250, 201, 141);
+}
+
+#users h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#users table {
+  border-radius: 15px;
+  background-color: #fbb03a;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+#users table tr:not(:first-of-type) {
+  background-color: white;
+}
+
+#users table th {
+  text-align: left;
+  color: white;
+  padding: 0 0 10px 10px;
+}
+
+#users table td {
+  padding: 10px;
+}
+
+#users table td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#users table tr td:nth-child(4) {
+  color: rgb(216, 20, 20);
+}
+
+#users table td:nth-child(5) a {
+  color: white;
+  background-color: #00aeff;
+  text-decoration: none;
+  padding: 3px 5px;
+  border-radius: 10px;
+}
+
+#mission {
+  text-align: center;
+  width: 50%;
+  margin: 50px auto 50px;
+}
+
+#mission > ul {
+  display: inline-block;
+  margin-top: 20px;
+  list-style-type: disclosure-closed;
+  /* list-style-image: url("./assets/right-arrow-black-triangle.png"); */
+}
+#mission > ul > li {
+  padding-left: 10px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+::selection {
+  background-color: rgb(117, 218, 77);
+  color: white;
+}
