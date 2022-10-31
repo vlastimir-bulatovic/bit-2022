@@ -79,27 +79,31 @@
 
 // 6. 
 
-function errorCallback(){
-    return "Your password is invalid";
-}
+// function errorCallback(){
+//     return "Your password is invalid";
+// }
 
-function successCallback() {
-    return "Your password is cool!";
-}
+// function successCallback() {
+//     return "Your password is cool!";
+// }
 
-function passwordChecker(pass, error, success) {
+// function passwordChecker(pass, error, success) {
 
-    if(pass.length < 6) return error;
+//     if(pass.length < 6) return error;
 
-    for(var i =0; i < pass.length; i++) {
+//     for(var i =0; i < pass.length; i++) {
 
-        if(parseInt(pass[i]) == pass[i]) return success;
+//         if(parseInt(pass[i]) == pass[i]) return success;
     
-    }
+//     }
 
-    return error;
-}
+//     return error;
+// }
 
 
-var b = passwordChecker("12345", errorCallback, successCallback);
-console.log(b())
+// var b = passwordChecker("bababa1", errorCallback, successCallback);
+// console.log(b())
+
+
+// 7. 
+
