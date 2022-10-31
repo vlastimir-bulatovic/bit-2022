@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 600px;
+    margin: 100px auto;
+}
+div table {
+    border-spacing: 0 20px;
+}
+div table tr:first-of-type{
+    background-color: red;
+    color: #fff;
+}
+
+div > table > tr > img {
+    height: 150px;
+}
+
+
+

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div {
+    padding: 50px;
+}
+
+div ul:first-of-type{
+    list-style-type:circle;
+    margin-bottom: 40px;
+}
+
+div ul:nth-child(2) {
+    list-style-type: square;
+    margin-bottom: 40px;
+}
+
+div ul:nth-child(3) {
+    list-style-image: linear-gradient(to left bottom, red, blue);
+    list-style-position: outside;
+    margin-bottom: 40px;
+}
+
+div ul:last-of-type {
+    list-style-image: url("./../assets/programming.png");
+    list-style-position: inside;
+}
+
+
+
+
+
+
+
+div ol:first-of-type {
+    list-style-type:upper-alpha;
+    margin-bottom: 40px;
+}
+
+div ol:last-of-type {
+    list-style-type: upper-roman;
+}

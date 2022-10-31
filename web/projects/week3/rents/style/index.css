@@ -1,3 +1,5 @@
+/* Added responsive for mobile i tablet */
+
 * {
     margin: 0;
     padding: 0;
@@ -66,7 +68,7 @@ aside > form  h3 {
 aside > form select {
     padding: 4px 10px;
     border-radius: 5px;
-    min-width: 200px;
+    min-width: 100%;
 }
 
 aside > form select:focus {
@@ -139,4 +141,54 @@ main {
     border: none;
     color: white;
     cursor: default;
+}
+
+.mobile-icon {
+    display: none;
+}
+.mobile-icon  > svg{
+    width: 20px;
+}
+
+
+/* tablet */
+
+@media screen and (max-width: 768px){
+    
+    aside {
+        left: unset;
+        right: 0;
+        width: 200px;
+        padding: 30px 20px;
+    }
+
+    main {
+        width: calc(100% - 200px);
+        margin-right: auto;
+        margin-left: unset;
+        padding: 30px 20px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .mobile-icon {
+        display: inline-block;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        border-radius: 5px;
+        padding: 7px 5px 5px ;
+        border: 1px solid grey;
+        background-color: white;
+    }
 }

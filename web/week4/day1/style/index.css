@@ -1,0 +1,90 @@
+/* if D - T - M  max-width */
+/* if M - T - D min-width */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: lightblue;
+    padding: 10px 30px;
+
+}
+
+header > nav > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+main > h1 {
+    text-align: center;
+    background-image: url("https://cdn.dribbble.com/users/39609/screenshots/15513968/media/be6209ba4b256fd5bc1cef275baa2c7c.jpg?compress=1&resize=400x300");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px 0;
+    letter-spacing: 3px;
+    font-size: 52px;
+}
+
+main > p {
+    width: 60%;
+    margin: 100px auto;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    header > nav > a {
+        text-transform: lowercase;
+    }
+
+
+    main > h1 {
+        font-size: 38px;
+        padding: 150px 0;
+    }
+
+
+    main > p {
+        width: 90%;
+        margin: 50px auto;
+
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    header {
+        background-color: transparent;
+    }
+
+    header > nav > a{
+        display: block;
+        margin:10px 0;
+        padding: 10px 0;
+        text-align: center;
+
+        background-color: lightblue;
+        text-transform: uppercase;
+    }
+
+    main > h1 {
+        display: none;
+    }
+}

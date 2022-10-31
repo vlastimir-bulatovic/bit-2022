@@ -1,0 +1,38 @@
+/* if D - T - M  max-width */
+/* if M - T - D min-width */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+h1 {
+    background-color: yellow;
+    color: red;
+    margin: 50px 30px;
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px){
+
+    /* style for tablet */
+    body {
+        background-color: pink;
+    }
+
+
+}
+
+@media screen and (max-width: 425px){
+    
+    
+
+}
