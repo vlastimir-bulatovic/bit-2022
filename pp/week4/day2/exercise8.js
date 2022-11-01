@@ -26,20 +26,20 @@
 
 // 7.
 
-// function conditionCallback(el) {
-//     return el % 2 === 0 ? true : false ;
-// }
+function conditionCallback(el) {
+    return el % 2 === 0 ? true : false ;
+}
 
-// function filterArray(arr, condition) {
-//     var newArray = [];
+function filterArray(arr, condition) {
+    var newArray = [];
 
-//     for(var i =0; i < arr.length; i++) {
-//         if(condition(arr[i])) {
-//             newArray[newArray.length] = arr[i];
-//         }
-//     }
+    for(var i =0; i < arr.length; i++) {
+        if(condition(arr[i])) {
+            newArray[newArray.length] = arr[i];
+        }   
+    }
 
-//     return newArray;
-// }
+    return newArray;
+}
 
-// console.log(filterArray([1, 2, 3, 577, 43, 2, 0], conditionCallback));
+console.log(filterArray([1, 2, 3, 577, 43, 2, 0], conditionCallback));
