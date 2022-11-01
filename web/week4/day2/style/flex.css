@@ -1,0 +1,32 @@
+.container {
+    background-color: lightgray;
+    height: 600px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    /* default row  */
+    flex-direction: row;
+
+    /* default flex-start */
+    justify-content: space-between;
+
+    /* default stretch */
+    align-items: center;
+}
+
+.item {
+    background-color: brown;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid yellow;
+    /* flex-grow: 1; */
+}
+
+.item:first-of-type{
+    flex-basis: 700px;
+    flex-shrink: 0;
+}
+

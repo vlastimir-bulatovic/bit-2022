@@ -1,0 +1,118 @@
+/* M-T-D */
+
+body {
+    padding: 50px 15px ;
+}
+
+header > h1 {
+    text-align: center;
+    
+}
+
+header > div {
+    background-color: lightblue;
+    color: grey;
+    padding: 150px 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+header > nav > a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 12px 0px;
+}
+
+header > nav > a:first-of-type{
+    background-color: lightseagreen;
+    color: white;
+}
+
+
+header > * {
+    margin-bottom: 20px;
+}
+
+
+main > article > img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0 0 ;
+} 
+
+main > article{
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+} 
+
+main > article > p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header > div {
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    header > nav > a {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    main > article {
+        display: flex;
+    }
+
+    main > article > img {
+        width: 40%;
+    }
+
+    main > article > p {
+        align-self: center;
+    }
+    
+}
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+    body{
+        padding: 50px 10%;
+    }
+
+    main {
+        display: flex;
+    }
+
+    main > article {
+        display: block;
+        margin: 0 ;
+        border: none;
+    }
+
+    main > article > img{
+        width: 100%;
+    }
+}

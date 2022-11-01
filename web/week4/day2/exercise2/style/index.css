@@ -1,0 +1,118 @@
+
+body {
+    min-height: 100vh;
+    padding: 50px 10%;
+}
+
+.logo-short {
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header > input[type="search"] {
+    padding: 5px 10px 5px 30px;
+    max-width: 300px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-image: url("./../assets/search.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 7px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+main > .card {
+    padding: 5px;
+    margin-top: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    width: 31%;
+}
+
+main > .card >img {
+    width: 100%;
+}
+
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+    .logo-short{
+        display: block;
+    }
+    .logo-long{
+        display: none;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    header > input {
+        margin-left: 20px;
+    }
+
+
+
+
+    main > .card {
+        width: 47%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main > .card > h3 {
+        order: -1;
+        align-self: center;
+    }
+
+    main > .card >img {
+        width: 100px;
+        border-radius: 50%;
+    }
+}
+
+
+
+/* mobile */
+
+@media screen and (max-width: 425px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    header > h1 {
+        margin-bottom: 10px;
+    }
+    header > input[type="search"] {
+        width: 100%;
+        margin: 0;
+        max-width: unset;
+    }
+
+
+    main {
+        display: block;  
+    }
+
+    main > .card {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+    main > .card > img {
+        display: none;
+    }
+}
