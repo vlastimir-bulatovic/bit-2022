@@ -1,0 +1,70 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header, section , aside, footer {
+    padding: 30px 0 30px 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #1e90ff;
+}
+
+main {
+    flex-basis: 100%;
+    display: flex;
+    padding: 20px 0 ;
+}
+
+
+footer {
+    background-color: #4169e1 ;
+}
+
+aside {
+    background-color: #ff6347  ;
+    width: 20%;
+}
+
+
+section {
+    background-color: #3cb371 ;
+    width: 80%;
+    margin-right: 20px;    
+}
+
+section > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.item{
+    background-color: #2f8d59;
+    flex-basis: 23%;
+    padding: 50px 0;
+    margin: 1%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 3px 14px 0px rgba(34,103,65,0.75);
+    -webkit-box-shadow: 2px 3px 14px 0px rgba(34,103,65,0.75);
+    -moz-box-shadow: 2px 3px 14px 0px rgba(34,103,65,0.75);
+
+}
+
+@media screen and (max-height: 600px) {
+    .item {
+        padding: 30px 0;
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
