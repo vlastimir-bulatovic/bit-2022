@@ -69,7 +69,7 @@ function ModernCalculator(a,b,c) {
 			newArra[1] = -this.b + " - " + Math.sqrt(tmp) / (2 * this.a) + "i";
             
 			return newArra;
-		}else if(tmp === 0) { // The discriminant is smaller then zero so, there are two real roots.
+		}else if(tmp === 0) { // The discriminant is smaller then zero so, there are one real root.
 			return -this.b / (2 * this.a);
 		}
         
