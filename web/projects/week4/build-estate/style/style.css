@@ -1,0 +1,425 @@
+/* Header */
+
+header nav, header h2 {
+    margin: 25px 25px;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+} 
+
+header  h2 {
+    font-size: 2em;
+    color: #7a7a7a;
+    margin-bottom: 0;
+}
+
+header h2 > span {
+    color: #ffa119;
+    border: 3px solid #7a7a7a;
+    border-right: none;
+    padding-left: 7px;
+}
+
+header nav {
+    background-color: #7fc2f7;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+header nav > a {
+    display: block;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+header nav > a:last-of-type {
+    margin-bottom: 0;
+}
+
+div.banner {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+    background-image: url('../img/banner3.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+div.banner > h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.8em;
+    padding-top: 30px;
+}
+
+div.banner > a {
+    background-color: #146eb4;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+/* End of Header */
+
+section > h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.1em;
+} 
+
+/* Who we are section */
+
+#whoWeAre {
+    padding: 50px 30px;
+}
+
+#whoWeAre  h3 {
+    padding: 25px 0;
+    font-size: 1.3em;
+    color: #4fa1e1;
+} 
+
+#whoWeAre  blockquote {
+    text-align: justify;
+}
+
+#whoWeAre  blockquote > q {
+    line-height: 1.7;
+}
+
+#whoWeAre  ul {
+    list-style-position: inside;
+    list-style-image: url("./../img/arrow16.png");
+    padding: 25px 0;
+    color: #817976;
+    line-height: 2;
+}
+
+#whoWeAre  img {
+    width: 100%;
+}
+
+
+/* What people says section  */
+
+#peopleSay {
+    padding: 50px 30px;
+}
+
+#peopleSay > .card-wrapper > .card {
+    background-color: #7fc2f7;
+    padding: 25px 10px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#peopleSay img {
+    width: 60px;
+    border: solid 2px #fff;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+#peopleSay > .card-wrapper {
+    margin-top: 40px;
+}
+
+#peopleSay > .card-wrapper > .card > div {
+    display: flex;
+    gap: 15px;
+}
+
+#peopleSay h5 {
+    color: #000;
+    align-self: center;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+#peopleSay > .card-wrapper > .card > p {
+    line-height: 1.7;
+}
+
+#peopleSay h5 > span {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+/* Get in touch with us section */
+
+#getInTouch {
+    padding: 50px 0px;
+}
+
+#getInTouch .touch-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#getInTouch .touch-wrapper > div {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 40px 0px;
+    color: #fff;
+    line-height: 2;
+    height: 200px;
+}
+
+#getInTouch .touch-wrapper > div > p:first-of-type {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+
+#getInTouch .touch-wrapper > div > .contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: bottom;
+    gap: 5px;
+}
+
+#getInTouch .touch-wrapper > div svg {
+    width: 20px; 
+}
+
+
+
+#getInTouch .touch-wrapper > div:nth-child(1) {
+    background-color: #2cdd98;
+} 
+
+#getInTouch .touch-wrapper > div:nth-child(2) {
+    background-color: #ff4f81;
+} 
+#getInTouch .touch-wrapper > div:nth-child(3) {
+    background-color: #3369e6;
+} 
+#getInTouch .touch-wrapper > div:nth-child(4) {
+    background-color: #7fc2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+} 
+
+#getInTouch .touch-wrapper > div > img {
+    flex-basis: 90%;
+    max-height: 120px;
+} 
+
+#getInTouch .touch-wrapper > div > a > img{
+    height: 20px;
+    margin: 25px 5% 0px 0 ;
+} 
+
+#getInTouch iframe {
+    height: 300px;
+}
+/* End getInTouch section */
+
+/* Mail Us section */
+
+#mailUs {
+    padding: 50px 20px;
+}
+
+#mailUs form {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#mailUs form > * {
+    padding: 10px;
+}
+
+#mailUs form > button {
+    color: #fff;
+    background-color: #ff9801;
+    width: 100px;
+    border: none;
+}
+
+
+/* End Mail Us section */
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 50px 0px;
+}
+
+footer > nav {
+    margin-bottom: 30px;
+}
+footer > nav > a {
+    margin: 0 10px;
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    div.banner {
+        background-image: none;
+    }
+    header {
+        background-image: url('../img/banner3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+    }
+    header > .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header > .header-wrapper > nav > a {
+        display: inline-block;
+        margin: 0 0 0 15px;
+    }
+
+    header > .header-wrapper > nav {
+        background-color: unset;
+    }
+
+    header nav, header h2 {
+        margin: 0 20px;
+    }
+
+    header > .header-wrapper > h2 > span {
+        border-color: #fff;
+    }
+
+    header > .header-wrapper > h2 {
+        color: white;
+    }
+
+    div.banner > h1 {
+        font-size: 2.3em;
+    }
+
+
+    .who-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+    #whoWeAre img, .who-wrapper > div {
+        flex-grow: 1;
+        width: 48%;
+    }
+
+    #whoWeAre img {
+        padding-top: 25px;
+    }
+    .who-wrapper >div:last-of-type{
+        flex-basis: 100%;
+    }
+    
+
+    #peopleSay h5 {
+        font-size: 1.2em;
+    }
+
+
+    .line span:nth-child(2n+1){
+        width: 70px;
+    }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card-wrapper > .card {
+        flex-basis: 48%;
+    }
+
+    #getInTouch .touch-wrapper > div > img {
+        max-height: 180px;
+    } 
+
+    #mailUs {
+        padding: 50px 10%;
+    }
+
+    #mailUs form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #mailUs form input {
+        flex-basis: 30%;
+    }
+
+    #mailUs form textarea {
+        flex-basis: 100%;
+    }
+}
+
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+    header {
+        height: 100vh;
+    }
+
+    .who-wrapper {
+        flex-wrap: nowrap;
+        padding: 0 15%;
+    }
+    .who-wrapper > div:last-of-type{
+        flex-basis: unset;
+    }
+
+    #whoWeAre img {
+        width: 30%;
+    }
+
+    .line span:nth-child(2n+1){
+        width: 100px;
+    }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        padding: 0 50px;
+    }
+
+    .card-wrapper > .card {
+        flex-basis: 32%;
+    }
+
+    #getInTouch .touch-wrapper {
+
+        flex-wrap: nowrap;
+    }
+
+    #getInTouch iframe {
+        height: 400px;
+    }
+
+    #mailUs {
+        padding: 50px 20%;
+    }
+
+}
