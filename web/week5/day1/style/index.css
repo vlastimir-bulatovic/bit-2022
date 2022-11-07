@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: aqua;
+}
+
+div {
+  font-size: 30px;
+  background-color: yellow;
+}
+div a {
+  text-decoration: none;
+}
+div > p {
+  text-align: center;
+}
+div.box {
+  background-color: red;
+}/*# sourceMappingURL=index.css.map */

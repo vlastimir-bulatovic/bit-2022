@@ -29,33 +29,42 @@
 
 // Napraviti funkciju koja izvrce reci u recenici.
 
-// function reversWords(str) {
+function reversWords(str) {
     
-//     var newStr = "";
-//     var word = "";
+    var newStr = "";
+    var word = "";
+    var interpunction = "";
 
-//     for(var i = str.length -1; i>=0 ;i--) {
+    for(var i = str.length -1; i>=0 ;i--) {
         
         
-//         if(str[i] === " " || i === 0) {
-//             word += (i === 0) ? str[i] + " " : " ";
-//             newStr = word + newStr;
-//             word = "";
-//         }else {
-//             word += str[i];
-//         }
 
-//     }
+        if(str[i] === " " || i === 0) {
+            word += interpunction;
+            word += (i === 0) ? str[i] + " " : " ";
+            newStr = word + newStr;
+            word = "";
+            interpunction = "";
 
-//     newStr = newStr[0].toUpperCase() + newStr.slice(1);// capitalize first letter of the string
-//     // .charAt(index) returns a character at given index (in our case index = 0 so first character)
-//     // .toUpperCase() convert string to uppercase
-//     // .slice(start, end) returns string from index start to index end. In our case we start from 1 to the end of string. In our case we don't have to specify the end index because it is by default string.length -1
-//     return newStr;
-// }
+        }else {
+            if(str[i] === "." || str[i] === "," || str[i] === "?" || str[i] === "!") {
+                    interpunction = str[i];
+                }else {
+                    word += str[i];
+                }
+        }
+
+    }
+
+    newStr = newStr[0].toUpperCase() + newStr.slice(1);// capitalize first letter of the string
+    // .charAt(index) returns a character at given index (in our case index = 0 so first character)
+    // .toUpperCase() convert string to uppercase
+    // .slice(start, end) returns string from index start to index end. In our case we start from 1 to the end of string. In our case we don't have to specify the end index because it is by default string.length -1
+    return newStr;
+}
  
 
-// console.log(reversWords("capitalize first letter of the string"));
+console.log(reversWords("capitalize first Letter of the string."));
 
 
 

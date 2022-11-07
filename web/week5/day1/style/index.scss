@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+div {
+    font-size: 30px;
+    background-color: yellow;
+    
+    a {
+        text-decoration: none;
+    }
+    
+    // first heir
+    > p {
+        text-align: center;
+    }
+
+    // div with class box
+    &.box {
+        background-color: red;
+    }
+}
