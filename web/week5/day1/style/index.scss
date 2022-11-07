@@ -1,29 +1,73 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import 'reset';
+
+$color: #fff;
+$bg-color: #0000ff;
+
+
+@mixin center-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-body {
-    min-height: 100vh;
-    background-color: aqua;
-}
+
+
 
 div {
-    font-size: 30px;
-    background-color: yellow;
     
-    a {
-        text-decoration: none;
-    }
-    
-    // first heir
-    > p {
-        text-align: center;
+    @include center-element;
+    flex-direction: column;
+
+    > h2 {
+        background-color: $bg-color;
+        color: $color;
     }
 
-    // div with class box
-    &.box {
-        background-color: red;
+}
+
+.border {
+    border: 1px solid;
+}
+
+.exercise-7{
+    flex-direction: row;
+    p:first-of-type{
+        @extend .border;
+        border-color: red;
     }
+
+    p:nth-child(2){
+        @extend .border;
+        border-color: blue;  
+    }
+
+    p:last-of-type {
+        @extend .border;
+        border-color: green;
+    }
+
+    p { 
+        width:  calc(100% / 3 - 60px);
+        margin: 10px;
+    }
+}
+
+
+// loops
+@for $i from 1 through 10 {
+    .margin-#{$i} {
+        margin: 4px * $i;
+    }
+}
+
+$grid: 40px;
+$gutter-width: 10px;
+
+// functions 
+@function grid-width($n) {
+    @return calc($n * $grid + ($n-1) * $gutter-width);
+}
+
+#sidebar {
+    width: grid-width(5);
 }
