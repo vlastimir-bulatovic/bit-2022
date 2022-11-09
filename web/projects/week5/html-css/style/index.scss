@@ -1,0 +1,79 @@
+@import 'reset';
+
+
+$white: #fff;
+$primary: #C1392B;
+$secondary: #2D3E50;
+$tertiary: #FFBE00;
+$green: #27AE61;
+// shared classes  //
+.background{
+    &-primary{
+        background-color: $primary;
+    }
+
+    &-secondary{
+        background-color: $secondary;
+    }
+    &-tertiary{
+        background-color: $tertiary;
+    }
+
+    &-green {
+        background-color: $green;
+    }
+}
+
+
+// start of header //
+
+header {
+    background-color: $primary;
+    padding: 10px;
+    nav{
+        text-align: right;
+        color: $white;
+
+        a {
+            margin-right: 10px;
+        }
+    }
+}
+// end of Header //
+
+// start of section //
+section {
+    div.row{
+        >div {
+            figure{
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                margin-top: 20px;
+            }
+        }
+
+        .list {
+            ol{
+                list-style-type: none;
+                padding: 10px;
+                li{
+                    margin-bottom: 10px;
+                    border-bottom: 1px solid;
+                }
+            }
+            
+        }
+    }
+}
+
+// end of section //
+
+// start of Footer //
+footer {
+    div{
+        color: $white;
+    }
+}
