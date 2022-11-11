@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.active {
+  background-color: red;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
