@@ -6,7 +6,7 @@
     function Product(productName, productPrice, productExpirationDate) {
         this.id = Math.floor(Math.random() * 90000) + 10000;
         this.name = productName;
-        this.price = Number(productPrice).toFixed(2);
+        this.price = Number(productPrice.toFixed(2));
         this.expirationDate = productExpirationDate;
 
 
@@ -31,7 +31,7 @@
         }
 
         this.getAveragePrice = function () {
-            return this.products.reduce((sum, current) => sum + Number(current.price), 0)  / this.products.length;
+            return this.products.reduce((sum, current) => sum + current.price, 0)  / this.products.length;
         }
 
         this.getMostExpensive = function () {
@@ -41,7 +41,7 @@
         this.totalPrice = function () {
             let total = 0;
 
-            this.products.forEach( (el) => total += Number(el.price));
+            this.products.forEach( (el) => total += el.price);
 
             return total;
         }
@@ -56,7 +56,7 @@
 
 
     function PaymentCard(accountBallance, accountStatus, cardExpirationDate) {
-        this.balance = Number(accountBallance).toFixed(2);
+        this.balance = Number(accountBallance.toFixed(2));
         this.isActive = accountStatus;
         this.expirationDate = cardExpirationDate;
     }
@@ -73,7 +73,7 @@
 
         return `Success`
     }
-
+    
     console.log(checkoutAndBuy(shoppingBag, userAccount));
     console.log("balance after payment:", userAccount.balance);
 
