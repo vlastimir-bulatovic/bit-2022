@@ -1,0 +1,18 @@
+@import 'reset';
+
+// add background
+body{
+    background-image: url("./../assets/bg.jpg");
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 120px;
+    transition: 0.3s;
+}
+
+// add transition
+img{
+    transition: margin 1s;
+}

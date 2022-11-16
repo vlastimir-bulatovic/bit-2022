@@ -1,0 +1,36 @@
+@import "reset";
+
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#track{
+    width: 70%;
+    margin: 0 auto;
+    border: 5px solid #000;
+    border-bottom: 0;
+    border-top: 0;
+    h1{
+        text-align: center;
+    }
+    >div{
+        width: fit-content;
+        margin-top: 10px;
+        transition: 0.6s;
+    }
+}
+
+.button-group{
+    text-align: center;
+    button{
+        padding: 10px 15px;
+        border: unset;
+        border-radius: 5px;
+        background-color: red;
+        color: #fff;
+        
+    }
+}

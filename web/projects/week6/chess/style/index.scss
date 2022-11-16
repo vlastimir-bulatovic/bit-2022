@@ -1,0 +1,37 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+#board{
+    @include flex($direction:column);
+    min-height: 100vh;
+
+
+    .row{
+        display: flex;
+        min-height: 60px;
+        .square {
+            width: 60px;
+            @include flex();
+        }
+
+
+        &-even{
+            div:nth-child(2n){
+                background-color: $squareDark;
+            }
+            div:nth-child(2n+1){
+                background-color: $squareLight;
+            }
+        }
+
+        &-odd{
+            div:nth-child(2n+1){
+                background-color: $squareDark;
+            }
+            div:nth-child(2n){
+                background-color: $squareLight;
+            }
+        }
+    }
+}

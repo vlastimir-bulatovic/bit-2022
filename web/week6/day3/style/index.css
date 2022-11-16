@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-image: url("./../assets/bg.jpg");
+  background-size: 100% 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 120px;
+  transition: 0.3s;
+}
+
+img {
+  transition: margin 1s;
+}/*# sourceMappingURL=index.css.map */
