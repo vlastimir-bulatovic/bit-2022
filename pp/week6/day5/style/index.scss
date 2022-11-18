@@ -1,0 +1,29 @@
+@import "reset";
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#root{
+    text-align: center;
+    select{
+        display: block;
+        margin: 10px auto;
+        padding: 5px 10px;
+        border: none;
+        border-bottom: 1px solid #000;
+        text-transform: capitalize;
+        font-size: 2em;
+        &:focus{
+            outline: none;
+        }
+    }
+
+}
+.img-wrapper{
+
+}
