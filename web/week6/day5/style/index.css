@@ -1,0 +1,74 @@
+a, a:hover {
+  text-decoration: none;
+}
+
+header, footer {
+  background: #343a40;
+  color: #fff;
+}
+
+header {
+  z-index: 2;
+}
+header input {
+  padding: 8px 15px;
+  border: 1px solid #343a40;
+  border-radius: 8px;
+  max-width: 450px;
+  flex-grow: 1;
+}
+header input:focus {
+  outline: unset;
+}
+header a, header a:hover {
+  color: #fff;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 992px) {
+  header input {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 425px) {
+  header input {
+    max-width: 60%;
+  }
+}
+
+main {
+  color: #343a40;
+}
+main .card {
+  border-radius: 5px;
+  border: unset;
+  transition: 0.6s;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+main .card img {
+  border-radius: 5px 5px 0 0;
+}
+main .card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+main .card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+main #showWrapper, main #showInfo {
+  min-height: calc(100vh - 216px);
+}
+main .episodes {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .episodes h3 {
+  flex-basis: 100%;
+}
+main .episodes a {
+  min-height: 150px;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */

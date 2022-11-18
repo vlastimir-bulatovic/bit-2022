@@ -1,0 +1,84 @@
+@import "reset";
+
+$black: #343a40;
+$white: #fff;
+
+header, footer{
+    background: $black;
+    color: $white;
+}
+header{  
+    z-index: 2; 
+    input{
+        padding: 8px 15px;
+        border: 1px solid $black;
+        border-radius: 8px;
+        max-width: 450px;
+        flex-grow: 1;
+        
+        &:focus{
+            outline: unset;
+        }
+    }
+
+    a, a:hover {
+        color: $white;
+        font-size: 1.5em;
+    }
+    @media screen and (max-width: 992px) {
+        input{
+            max-width: 50%;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        input{
+            max-width: 60%;
+        }
+    }
+}
+
+
+main {
+    color: $black;
+    .card{
+        border-radius: 5px;
+        border:unset;
+        transition: 0.6s;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        img{
+            border-radius: 5px 5px 0 0 ;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+    
+    }
+
+    #showWrapper, #showInfo{
+        min-height: calc(100vh - 216px);
+    }
+
+    .episodes{
+        display: flex;
+        flex-wrap: wrap;
+        h3{
+            flex-basis: 100%;
+        }
+        a{
+            min-height: 150px;
+            text-align: center;
+        }
+    }
+    
+}
