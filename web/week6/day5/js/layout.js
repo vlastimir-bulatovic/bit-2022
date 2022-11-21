@@ -15,11 +15,14 @@ function createHeader() {
 	brand.href = "./";
 	nav.append(brand);
 
+	const searchWrapper = document.createElement("div");
+	nav.append(searchWrapper);
+
 	const search = document.createElement("input");
 	search.type = `search`;
 	search.placeholder = `Search...`;
 	search.id = `search`;
-	nav.append(search);
+	searchWrapper.append(search);
 
 	document.body.prepend(header);
 }

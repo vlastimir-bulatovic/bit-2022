@@ -14,8 +14,7 @@ header input {
   padding: 8px 15px;
   border: 1px solid #343a40;
   border-radius: 8px;
-  max-width: 450px;
-  flex-grow: 1;
+  width: 100%;
 }
 header input:focus {
   outline: unset;
@@ -33,6 +32,26 @@ header a, header a:hover {
   header input {
     max-width: 60%;
   }
+}
+header nav {
+  position: relative;
+}
+header nav div {
+  min-width: 300px;
+}
+header nav ul {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 300px;
+  background-color: #fff;
+}
+header nav ul li {
+  border-bottom: 1px solid #343a40;
+  margin-bottom: 10px;
+}
+header nav ul a, header nav ul a:hover {
+  color: #343a40;
 }
 
 main {

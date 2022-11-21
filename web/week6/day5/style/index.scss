@@ -13,8 +13,7 @@ header{
         padding: 8px 15px;
         border: 1px solid $black;
         border-radius: 8px;
-        max-width: 450px;
-        flex-grow: 1;
+        width: 100%;
         
         &:focus{
             outline: unset;
@@ -33,6 +32,29 @@ header{
     @media screen and (max-width: 425px) {
         input{
             max-width: 60%;
+        }
+    }
+
+    nav {
+        position: relative;
+        
+        div{
+            min-width: 300px;
+        }
+        ul{
+            position: absolute;
+            right: 0;
+            top: 40px;
+            width: 300px;
+            background-color: $white;
+            li {
+                border-bottom: 1px solid $black;
+                margin-bottom: 10px;
+            }
+            a, a:hover{
+                color: $black;
+            }
+            
         }
     }
 }
