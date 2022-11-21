@@ -21,11 +21,12 @@ function searchShows(query) {
 }
 
 const search = document.getElementById("search");
+search.addEventListener("keyup", () => {});
 
 search.addEventListener("change", () => {
 	const query = search.value;
 	if (location.pathname === "/" || location.pathname === "/index.html") {
-		query ? searchShows(query) : loadShows();
+		query ? searchShows(query) : loadShows(); // ovo moze kao jedna funkcija (searchShows i loadShows)
 	} else {
 		if (query) {
 			searchShows(query);

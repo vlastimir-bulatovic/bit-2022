@@ -1,0 +1,98 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "animation";
+
+body {
+    min-height: 100vh;
+    color: $green;
+
+    h1{
+        font-size: 5em;
+    }
+}
+
+body:has(#characters){
+    background-image: url("./../assets/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#characters {
+    
+
+    .card {
+        min-height: 200px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        border: unset;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        border-radius: 10px;
+        transition: 0.6s;
+        border: 4px solid;
+        img {
+            border-radius: 8px;
+        }
+
+        button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            border: unset;
+            color: $white;
+            padding: 8px 25px;
+            font-size: 1.3em;
+            transition: 0.6s;
+            border-radius: 20px;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            }
+           
+        }
+    }
+
+    .dead {
+        border-color: $red;
+        button{
+            background-color: $red;
+        }
+    }
+
+    .alive {
+        border-color: $green;
+        button{
+            background-color: $green;
+        }
+    }
+
+    .unknown {
+        border-color: $purple;
+        button{
+            background-color: $purple;
+        }
+    }
+}
+
+.modal.show {
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+
+    .modal-body{
+
+        div{
+            line-height: 2.5;
+        }
+    }
+}
+
+#pagination{
+    a{
+        background-color: $green-dark;
+        color: $white;
+        display: inline-block;
+        padding: 10px;
+    }
+}
