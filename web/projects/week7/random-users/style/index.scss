@@ -1,0 +1,107 @@
+@import "reset";
+
+@mixin border-radius($border: 5px) {
+  border-radius: $border;
+}
+
+$pink: #dd6a70;
+$white: #fff;
+
+body {
+  width: 100%;
+}
+
+header,
+footer {
+  background-color: $pink;
+  color: $white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+#cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  div {
+    width: 300px;
+    margin: 20px 0;
+    word-break: break-word;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    @include border-radius;
+
+    p {
+      padding-left: 5px;
+    }
+    img {
+      width: 100%;
+      @include border-radius(5px 5px 0 0);
+    }
+  }
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.35);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: hidden;
+
+  &-body {
+    background-color: $white;
+    padding: 40px;
+    margin: 40px 0;
+    position: relative;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 600px;
+    overflow-y: scroll;
+    @include border-radius;
+
+    @media screen and (min-width: 768px) {
+      min-width: 600px;
+    }
+  }
+  button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 5px 10px;
+    border: unset;
+    @include border-radius;
+    background-color: $pink;
+    color: $white;
+  }
+}
+
+.modal.show {
+  display: flex;
+}
+
+.beer-wrapper {
+  > div {
+    margin: 30px 0;
+    img {
+      margin-bottom: 20px;
+      height: 70px;
+    }
+  }
+}
+
+h4 {
+  margin: 20px 0;
+}

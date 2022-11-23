@@ -1,0 +1,3 @@
+closeModal();
+
+getRandomUsers();

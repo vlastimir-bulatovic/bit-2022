@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: pink;
+
+    >div{
+        margin: 10px 0;
+        label{
+            font-size: 1.5em;
+           
+        }
+
+        input{
+            margin-top: 10px ;
+            display: block;
+            padding: 10px;
+            min-width: 400px;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            &::placeholder{
+                color: white;
+            }
+        }
+        input, input:focus-visible{
+            border: unset;
+            border-bottom: 1px solid black;
+            outline: unset;
+        }
+
+        button{
+            padding: 10px 20px;
+            border: unset;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            cursor: pointer;
+        }
+    }
+}
