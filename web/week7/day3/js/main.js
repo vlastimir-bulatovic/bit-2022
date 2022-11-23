@@ -17,6 +17,7 @@ socks.forEach((element)=>{
         obj[element] = 0
     }else obj[element] = 1;
 });
+    
 
 
 console.log(pairs)
