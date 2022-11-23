@@ -13,7 +13,10 @@ async function getRandomUsers() {
 
   const wrapper = document.getElementById("cardWrapper");
   const modal = document.querySelector(".modal>.modal-body>.data");
+
+
   const all = males.concat(females).sort(() => Math.random() - 0.5);
+  
   all.forEach((element) => {
     const card = document.createElement("div");
     card.addEventListener("click", () => {
