@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    width: 100%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-height: 200px;
+    width: 300px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card  img{
+    width: 100%;
+}
