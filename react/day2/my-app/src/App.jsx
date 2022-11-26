@@ -6,6 +6,7 @@ import ImagePage from "./pages/ImagePage/ImagePage";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import "./app.css";
+
 import Button from "./components/Button/Button";
 import { COUNTER_PAGE, IMAGE_PAGE } from "./constants";
 
@@ -37,32 +38,38 @@ export class App extends Component {
 		this.setState({ counter: 0 });
 	};
 
-	changePage= function() {
+	changePage = function () {
 		let page = this.state.currentPage;
 
 		page = page === COUNTER_PAGE ? IMAGE_PAGE : COUNTER_PAGE;
 
 		this.setState({ currentPage: page });
-	}
+	};
 
 	render() {
 		return (
 			<>
 				<Header />
-				
+
 				<div>
 					<Button method={this.changePage} text="Change page" />
 				</div>
 
 				<main>
+					{/* we call this conditional rendering. */}
+
+					{/* Only if first part (before && operator) is true will page render */}
 					{this.state.currentPage === COUNTER_PAGE && (
 						<CounterPage
+							// this way we sand props to our child components!!!
 							counter={this.state.counter}
 							methodIncrement={this.increaseCounter}
 							methodDecrement={this.decreaseCounter}
 							methodReset={this.resetCounter}
 						/>
 					)}
+
+					{/* Only if first part (before && operator) is true will page render */}
 					{this.state.currentPage === IMAGE_PAGE && <ImagePage />}
 				</main>
 

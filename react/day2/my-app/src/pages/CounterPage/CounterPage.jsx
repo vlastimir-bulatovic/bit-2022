@@ -5,11 +5,8 @@ import "./counterPage.css";
 import Button from "../../components/Button/Button";
 
 export class Homepage extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
+		// we can write js code in render function
 		let sign = "",
 			isOddOrEven = "";
 		this.props.counter &&
@@ -22,6 +19,7 @@ export class Homepage extends Component {
 				<h2>Counter: {this.props.counter}</h2>
 				<p>{sign}</p>
 				<p>{isOddOrEven}</p>
+
 				{/* as a button */}
 				<div>
 					<button onClick={this.props.methodIncrement}>
@@ -45,10 +43,7 @@ export class Homepage extends Component {
 				</div>
 
 				<div>
-					<Button
-						text="reset"
-						method={this.props.methodReset}
-					/>
+					<Button text="reset" method={this.props.methodReset} />
 				</div>
 			</div>
 		);
