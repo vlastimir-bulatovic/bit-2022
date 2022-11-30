@@ -12,13 +12,20 @@
 // const {boja} = obj;
 // console.log(boja);
 
+// function useState(initialValue) {
+//     let state = initialValue;
 
-function useState(initialValue) {
-    let state = initialValue;
+//     function setState(currentValue) {
+//         state = currentValue;
+//     }
 
-    function setState(currentValue) {
-        state = currentValue;
-    }
+//     return [state, setState];
+// }
 
-    return [state, setState];
-}
+// React Hooks for Functional React
+
+// useState(),
+// useEffect(),
+// useRef(),
+// useMemo(), // used for some big computation, filtering etc.
+// useContext()

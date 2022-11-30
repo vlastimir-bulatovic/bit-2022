@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./app.css";
 import Button from "./components/Button/Button";
 import Button2Class from "./components/Button2Class/Button2Class";
+import Dogs from "./components/Dogs/Dogs";
 
 const App = () => {
 	const dogApi = "https://dog.ceo/api/breed/hound/images";
@@ -63,6 +64,8 @@ const App = () => {
 				<blockquote>
 					<q>{fetchedData?.quote}</q>
 				</blockquote>
+
+				<Dogs fetchAllData={fetchAllData} />
 			</div>
 		</>
 	);

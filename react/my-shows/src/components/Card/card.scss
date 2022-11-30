@@ -1,0 +1,37 @@
+.card{
+    border: unset;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+
+    &-gold{
+        background-color: gold;
+    }
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    .rating{
+        height: 50px;
+        width: 50px;
+        top: -25px;
+        right: 25px;
+        border-radius: 50%;
+        border: 1px solid gold;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        font-weight: 700;
+    }
+}
