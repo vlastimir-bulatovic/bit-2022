@@ -1,0 +1,27 @@
+.card{
+    max-width: 22%;
+    margin: 10px 0 ;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 5px solid;
+    cursor: pointer;
+    background-color: white;
+    padding: 0 0 10px 0;
+}
+.card img {
+    width: 100%;
+}
+
+.card h3, .card p{
+    padding-left: 8px;
+}
+
+.alive{
+    border-color: chartreuse;
+}
+.dead{
+    border-color: red;
+}
+.unknown{
+    border-color: blueviolet;
+}
