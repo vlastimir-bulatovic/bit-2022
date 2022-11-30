@@ -1,0 +1,16 @@
+.pagination{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.button-group{
+    margin: 0 20px;
+}
+
+.button-group button{
+    margin: 0 5px;
+}
+.active{
+    color: #fff;
+    background-color: #000;
+}

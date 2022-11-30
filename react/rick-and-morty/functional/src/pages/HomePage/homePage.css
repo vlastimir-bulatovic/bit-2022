@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 50px;
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 3em;
+}

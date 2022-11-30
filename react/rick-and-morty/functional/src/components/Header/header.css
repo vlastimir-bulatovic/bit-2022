@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    min-height: 60px;
+    color: #fff;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+header> h2{
+    cursor: pointer;
+}
