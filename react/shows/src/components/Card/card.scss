@@ -1,0 +1,36 @@
+.card {
+  overflow: hidden;
+  border: unset;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .rating {
+    top: -25px;
+    right: 25px;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-weight: 700;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.bg-yellow {
+  background-color: #f1c75b;
+}

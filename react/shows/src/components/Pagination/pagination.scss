@@ -1,0 +1,19 @@
+#pagination {
+  .btn-gold {
+    border: unset;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid gold;
+    transition: 0.3s;
+    &:hover {
+      background-color: #000;
+      border-color: #000;
+      color: #fff;
+    }
+    &.active {
+      background-color: #000;
+      border-color: #000;
+      color: #fff;
+    }
+  }
+}

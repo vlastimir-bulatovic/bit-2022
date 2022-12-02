@@ -1,0 +1,7 @@
+#aboutPage {
+  .text-wrapper {
+    display: grid;
+    place-items: center;
+    min-height: calc(100vh - 350px);
+  }
+}

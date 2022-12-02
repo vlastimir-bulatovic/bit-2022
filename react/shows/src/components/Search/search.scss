@@ -1,0 +1,18 @@
+.search {
+  input {
+    border: unset;
+    border-bottom: 5px solid #ffd700;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    &:focus {
+      outline: unset;
+    }
+    &::-webkit-search-cancel-button {
+      filter: invert(74%) sepia(76%) saturate(720%) hue-rotate(355deg)
+        brightness(103%) contrast(109%);
+    }
+  }
+  ::placeholder {
+    color: #fff;
+  }
+}

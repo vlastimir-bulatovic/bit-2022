@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+main {
+  min-height: calc(100vh - 150px);
+  padding: 100px 0;
+}
+
+::selection {
+  background-color: gold;
+  color: #000;
+}
