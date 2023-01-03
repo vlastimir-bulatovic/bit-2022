@@ -1,66 +1,62 @@
 // 1.
 
 var coffee = {
-    name: "Arabica",
-    strength: "Strong",
-    flavour: "Biter",
-    milk: "Goat",
-    sugar: "No sugar",
-    size: "Short",
-    package: "Cup",
-    isCoffeeToGo: true,
-    color: "Black",
-    extra: "Cookey"
-}
+	name: "Arabica",
+	strength: "Strong",
+	flavour: "Biter",
+	milk: "Goat",
+	sugar: "No sugar",
+	size: "Short",
+	package: "Cup",
+	isCoffeeToGo: true,
+	color: "Black",
+	extra: "Cookey",
+};
 
-
-// 2. 
+// 2.
 
 var movie = {
-    title: "Godfather",
-    actors: ["Marlon Brando", "Al Pacino", "Robert de Niro", "Andy Garcia"],
-    genre: "Crime/Drama",
-    rating: 9.2,
-    created: "1972 - 1990",
-    oscars: 9,
-    oscarNominations: 28,
-    directedBy : "Francis Ford Coppola",
-    music: "Nino Rota"
-}
+	title: "Godfather",
+	actors: ["Marlon Brando", "Al Pacino", "Robert de Niro", "Andy Garcia"],
+	genre: "Crime/Drama",
+	rating: 9.2,
+	created: "1972 - 1990",
+	oscars: 9,
+	oscarNominations: 28,
+	directedBy: "Francis Ford Coppola",
+	music: "Nino Rota",
+};
 
-
-
-// 3. 
+// 3.
 
 function createObjects(description, lang, git, status) {
-
 	var newObj = {
 		description: description,
-        language: lang,
-        gitRepo: git,
-        isActive: status,
+		language: lang,
+		gitRepo: git,
+		isActive: status,
 
+		getRepo: function () {
+			return git;
+		},
+		isProjectActive: function () {
+			return status;
+		},
 
-        getRepo: function() {
-            return git;
-        },
-        isProjectActive: function() {
-            return status;
-        },
+		isLanguageJS: function () {
+			if (
+				lang.toLowerCase() === "js" ||
+				lang.toLower() === "javascript"
+			) {
+				return true;
+			}
 
-        
-        isLanguageJS: function() {
-            if(lang.toLowerCase() === "js" || lang.toLower() === "javascript")  {
-                return true;
-            }
-
-            return false;
-        },
+			return false;
+		},
 	};
 
-    return newObj;
+	return newObj;
 }
-
 
 // var newObject = createObjects("desc", "JS", "some git repo", false);
 
@@ -70,39 +66,35 @@ function createObjects(description, lang, git, status) {
 
 // console.log(newObject.isLanguageJS()); // boolean
 
+// 4.
 
-// 4. 
+function createRecipe(name, type, complex = 1, ingredients, time, instruction) {
+	var newObj = {
+		name: name,
+		cuisineType: type,
+		complexity: complex,
+		ingredientsList: ingredients,
+		time: time,
+		preparingInstruction: instruction,
 
-function createRecipe(name, type, complex=1, ingredients, time, instruction ) {
-
-    var newObj = {
-        name: name,
-        cuisineType: type,
-        complexity: complex,
-        ingredientsList: ingredients,
-        time: time,
-        preparingInstruction: instruction,
-
-
-
-        allIngredients: function () {
-            for (var i = 0; i < this.ingredientsList.length; i++) {
+		allIngredients: function () {
+			for (var i = 0; i < this.ingredientsList.length; i++) {
 				console.log(this.ingredientsList[i]);
 			}
-        },
+		},
 
-        isFastPrep: function () {
-            return this.time < 15 ? true : false;
-        },
+		isFastPrep: function () {
+			return this.time < 15 ? true : false;
+		},
 
-        changeCuisineType: function(newType) {
-            this.cuisineType = newType;
-        },
+		changeCuisineType: function (newType) {
+			this.cuisineType = newType;
+		},
 
-        deleteIngredient: function(ing) {
-            var isDeleted = false;
+		deleteIngredient: function (ing) {
+			var isDeleted = false;
 
-            for (var i = 0; i < this.ingredientsList.length; i++) {
+			for (var i = 0; i < this.ingredientsList.length; i++) {
 				if (ing === this.ingredientsList[i]) {
 					delete this.ingredientsList[i];
 					isDeleted = true;
@@ -114,20 +106,16 @@ function createRecipe(name, type, complex=1, ingredients, time, instruction ) {
 				}
 			}
 
-            if (isDeleted) {
+			if (isDeleted) {
 				this.ingredientsList.length = this.ingredientsList.length - 1;
 			}
 
-            return this.ingredientsList;
-        }
-        
+			return this.ingredientsList;
+		},
+	};
 
-    }
-
-    return newObj;
+	return newObj;
 }
-
-
 
 var obj = createRecipe(
 	"Gulas",
@@ -140,7 +128,7 @@ var obj = createRecipe(
 		"1 zlicica persuna",
 		"1 zlicica bibera",
 		"2 zlicice mlevene crvene paprike",
-		"1 zlica vegete"
+		"1 zlica vegete",
 	],
 	240,
 	"lorem lotremsdffdsdl"
